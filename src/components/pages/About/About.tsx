@@ -1,16 +1,24 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './style.css'
 import one from './img/one.png'
 import two from './img/two.png'
 import three from './img/three.png'
 import prototype from './img/prototype.png'
 import desk from './img/desk.png'
-
+//@ts-ignore
+import WOW from 'wowjs';
+import 'wowjs/css/libs/animate.css';
 
 export const About = () => {
+
+   useEffect(() => {
+      const wow = new WOW.WOW();
+      wow.init();
+   }, []);
+
    return (
      <React.Fragment>
-        <section className="about">
+        <section className="about wow animate__fadeInUp " data-wow-duration='2s'>
            <div className="about__bg">
               <div className='about__bg-container'>
                  <div className="about__title title green-line">Что такое <br/>

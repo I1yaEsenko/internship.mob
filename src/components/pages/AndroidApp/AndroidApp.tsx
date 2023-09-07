@@ -1,12 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import phone from './img/phone.png'
 import './style.css'
-
+//@ts-ignore
+import WOW from 'wowjs';
+import 'wowjs/css/libs/animate.css';
 
 export const AndroidApp = () => {
+
+   useEffect(() => {
+      const wow = new WOW.WOW();
+      wow.init();
+   }, []);
+
    return (
      <React.Fragment>
-        <section className="application">
+        <section className="application wow animate__fadeInUp " data-wow-duration='2s'>
            <div className="container">
               <div className="application__wrapper">
                  <h2 className="application__title title">Наша команда разработала приложение для ОС Android</h2>

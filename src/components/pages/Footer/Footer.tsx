@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './style.css'
 import copyright from '../../../assets/mob/copyright.svg'
 import {CustomForm} from "../../forms";
@@ -9,11 +9,22 @@ import behance from './img/behance.svg'
 import hubr from './img/hubr.svg'
 import dribbble from './img/dribbble.svg'
 import vc from './img/vc.svg'
+//@ts-ignore
+import WOW from 'wowjs';
+import 'wowjs/css/libs/animate.css';
+
 
 export const Footer = () => {
+
+   useEffect(() => {
+      const wow = new WOW.WOW();
+      wow.init();
+   }, []);
+
+
    return (
      <React.Fragment>
-        <footer className="footer">
+        <footer className="footer wow animate__zoomIn" data-wow-duration='2s'>
            <div className="container">
               <div className="footer__wrapper">
                     <div className="footer__contacts contacts">

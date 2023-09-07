@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './style.css'
 
 import item1 from './img/functional-item1.svg'
@@ -7,11 +7,22 @@ import item3 from './img/functional-item3.svg'
 import item4 from './img/functional-item4.svg'
 import item5 from './img/functional-item5.svg'
 import {Slider} from "../../../utils/Slider";
+//@ts-ignore
+import WOW from 'wowjs';
+import 'wowjs/css/libs/animate.css';
+
 
 export const Design = () => {
+
+   useEffect(() => {
+      const wow = new WOW.WOW();
+      wow.init();
+   }, []);
+
+
    return (
      <React.Fragment>
-         <section className="design">
+         <section className="design wow animate__fadeInUp " data-wow-duration='2s'>
             <div className="container">
                <div className="design__wrapper">
                   <div className="design__title title">От прототипов

@@ -1,14 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from '../../../assets/mob/mob_logo.svg'
 import burger from '../../../assets/mob/mob_burger.svg'
 import arrow from '../../../assets/mob/mob_arrow.svg'
 import {Button} from "../../forms";
 import './style.css'
+//@ts-ignore
+import WOW from 'wowjs';
+import 'wowjs/css/libs/animate.css';
+
 
 export const Header = () => {
+
+   useEffect(() => {
+      const wow = new WOW.WOW();
+      wow.init();
+   }, []);
+
+
    return (
      <React.Fragment>
-        <header className="header">
+        <header className="header wow animate__slideInLeft"  data-wow-duration='2s'>
            <div className="header__wrapper">
               <div className="header__row-top">
                  <div className="header__logo">
