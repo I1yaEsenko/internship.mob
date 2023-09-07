@@ -1,0 +1,116 @@
+@import "../../../styles/mixins.scss";
+
+.header {
+  margin: 0 auto;
+
+  &__wrapper {
+    display: grid;
+    @include adaptiv-value('grid-template-columns', 1272, 320, 1);
+    grid-template-rows: 50px 30px;
+    @media (min-width: 768px) {
+      grid-template-rows: 75px 35px;
+    }
+    @media (min-width: 1272px) {
+      grid-template-rows: 85px 45px;
+    }
+  }
+
+  &__row-top {
+    padding: 0.83rem 1.33rem;
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo img {
+    width: calc(30px + (62 - 30) * ((100vw - 320px) / (1272 - 320)));
+    height: calc(27px + (54 - 27) * ((100vw - 320px) / (1272 - 320)));
+    //@include adaptiv-value('width', 62, 30, 1);
+    //@include adaptiv-value('height', 54, 27, 1);
+    @media (min-width: 1272px) {
+      width: 62px;
+      height: 54px;
+    }
+  }
+
+  &__actions {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 15px;
+    @media (min-width: 767px) {
+      gap: 30px;
+    }
+  }
+
+  &__btn {
+    & button {
+      padding: 9px 16px;
+      @media (min-width: 767px) {
+        font-size: 16px;
+        padding: 17px 29px;
+      }
+    }
+  }
+
+  &__burger {
+    display: grid;
+
+    & img {
+      width: calc(24px + (42 - 24) * ((100vw - 320px) / (768 - 320)));
+      height: calc(9px + (16 - 9) * ((100vw - 320px) / (768 - 320)));
+      align-self: center;
+
+      @media (min-width: 768px) {
+        width: 42px;
+        height: 16px;
+      }
+
+    }
+  }
+
+}
+
+.navigation {
+
+  padding: 9px 16px;
+
+  &__list {
+    display: flex;
+    column-gap: 10px;
+    @media (min-width: 767px) {
+      column-gap: 15px;
+    }
+  }
+
+  &__item {
+
+    &:last-child .navigation__link {
+      color: var(--color-pink, #F86161);
+      font-weight: 500;
+    }
+
+  }
+
+  &__link {
+    color: var(--color-text, #000000);
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__arrow {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      @media (min-width: 767px) {
+        width: 20px;
+        height: 9px;
+      }
+    }
+  }
+}
+

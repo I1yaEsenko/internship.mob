@@ -1,0 +1,112 @@
+.header {
+  margin: 0 auto;
+}
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 1272px;
+  grid-template-rows: 50px 30px;
+}
+@media (max-width: 1272px) {
+  .header__wrapper {
+    grid-template-columns: calc(320px + 952 * ((100vw - 320px) / 952));
+  }
+}
+@media (min-width: 768px) {
+  .header__wrapper {
+    grid-template-rows: 75px 35px;
+  }
+}
+@media (min-width: 1272px) {
+  .header__wrapper {
+    grid-template-rows: 85px 45px;
+  }
+}
+.header__row-top {
+  padding: 0.83rem 1.33rem;
+  display: grid;
+  grid-template-columns: 20% auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo img {
+  width: calc(30px + 32 * (100vw - 320px) / 952);
+  height: calc(27px + 27 * (100vw - 320px) / 952);
+}
+@media (min-width: 1272px) {
+  .header__logo img {
+    width: 62px;
+    height: 54px;
+  }
+}
+.header__actions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 15px;
+}
+@media (min-width: 767px) {
+  .header__actions {
+    gap: 30px;
+  }
+}
+.header__btn button {
+  padding: 9px 16px;
+}
+@media (min-width: 767px) {
+  .header__btn button {
+    font-size: 16px;
+    padding: 17px 29px;
+  }
+}
+.header__burger {
+  display: grid;
+}
+.header__burger img {
+  width: calc(24px + 18 * (100vw - 320px) / 448);
+  height: calc(9px + 7 * (100vw - 320px) / 448);
+  align-self: center;
+}
+@media (min-width: 768px) {
+  .header__burger img {
+    width: 42px;
+    height: 16px;
+  }
+}
+
+.navigation {
+  padding: 9px 16px;
+}
+.navigation__list {
+  display: flex;
+  column-gap: 10px;
+}
+@media (min-width: 767px) {
+  .navigation__list {
+    column-gap: 15px;
+  }
+}
+.navigation__item:last-child .navigation__link {
+  color: var(--color-pink, #F86161);
+  font-weight: 500;
+}
+.navigation__link {
+  color: var(--color-text, #000000);
+}
+@media (min-width: 768px) {
+  .navigation__link {
+    font-size: 16px;
+  }
+}
+.navigation__arrow {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 767px) {
+  .navigation__arrow img {
+    width: 20px;
+    height: 9px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

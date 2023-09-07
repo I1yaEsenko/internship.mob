@@ -1,0 +1,76 @@
+<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1336523141">
+<g id="Clip path group">
+<mask id="mask0_1509_114" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="33">
+<g id="clip-path-5">
+<g id="Clip path group_2">
+<mask id="mask1_1509_114" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="33">
+<g id="clip-path-2">
+<g id="Clip path group_3">
+<mask id="mask2_1509_114" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="33">
+<g id="clip-path">
+<path id="Vector" d="M32 0.35553H0V32.3555H32V0.35553Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask2_1509_114)">
+<path id="Vector_2" d="M16 32.3555C19.1645 32.3555 22.2579 31.4172 24.8891 29.6591C27.5203 27.901 29.5711 25.4021 30.7821 22.4785C31.9931 19.5549 32.3099 16.3378 31.6926 13.2341C31.0752 10.1304 29.5514 7.27948 27.3137 5.04184C25.0761 2.8042 22.2251 1.28033 19.1214 0.662968C16.0177 0.0456049 12.8007 0.362474 9.87706 1.57348C6.95344 2.78448 4.45459 4.83522 2.69648 7.46641C0.938382 10.0976 0 13.191 0 16.3555C0 20.599 1.68571 24.6687 4.68629 27.6693C7.68687 30.6698 11.7565 32.3555 16 32.3555Z" fill="white"/>
+</g>
+</g>
+</g>
+</mask>
+<g mask="url(#mask1_1509_114)">
+<path id="Vector_3" d="M-75.8396 -407.644H244.16V661.156H-75.8396V-407.644Z" fill="white"/>
+</g>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_1509_114)">
+<g id="Group">
+<path id="Vector_4" d="M33.5999 -1.24451H-1.6001V33.9555H33.5999V-1.24451Z" fill="#DF0016"/>
+</g>
+</g>
+</g>
+<g id="Clip path group_4">
+<mask id="mask3_1509_114" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="8" width="10" height="15">
+<g id="clip-path-6">
+<g id="Clip path group_5">
+<mask id="mask4_1509_114" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="33">
+<g id="clip-path_2">
+<path id="Vector_5" d="M32 0.35553H0V32.3555H32V0.35553Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask4_1509_114)">
+<path id="Vector_6" d="M8.94062 8.81476V14.2548C9.76782 13.266 10.7614 12.7684 11.9134 12.7684C12.4654 12.7604 13.0122 12.8762 13.5134 13.1075C13.9425 13.2921 14.3143 13.5882 14.5902 13.9651C14.8322 14.3141 15.0005 14.7089 15.0846 15.1251C15.1911 15.776 15.2356 16.4355 15.2174 17.0948V22.9155H12.6398V17.6739C12.6398 16.6339 12.5934 15.9748 12.4958 15.6948C12.4032 15.4207 12.2205 15.186 11.9774 15.0291C11.7009 14.8528 11.3771 14.7652 11.0494 14.7779C10.6456 14.7714 10.2487 14.8826 9.90701 15.0979C9.55807 15.324 9.29717 15.6628 9.16781 16.0579C9.01101 16.4846 8.93368 17.115 8.93581 17.9491V22.9187H6.36621V8.81632H8.94062" fill="white"/>
+</g>
+</g>
+</g>
+</mask>
+<g mask="url(#mask3_1509_114)">
+<g id="Group_2">
+<path id="Vector_7" d="M16.8189 7.21472H4.76611V24.5171H16.8189V7.21472Z" fill="white"/>
+</g>
+</g>
+</g>
+<g id="Clip path group_6">
+<mask id="mask5_1509_114" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="8" width="10" height="15">
+<g id="clip-path-7">
+<g id="Clip path group_7">
+<mask id="mask6_1509_114" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="33">
+<g id="clip-path_3">
+<path id="Vector_8" d="M32 0.35553H0V32.3555H32V0.35553Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask6_1509_114)">
+<path id="Vector_9" d="M19.0782 8.81477V14.2548C19.907 13.266 20.8979 12.7705 22.051 12.7684C22.6029 12.7612 23.1495 12.877 23.651 13.1075C24.0787 13.293 24.4492 13.589 24.7246 13.9652C24.9659 14.3145 25.1341 14.7091 25.219 15.1252C25.3246 15.7761 25.3691 16.4355 25.3518 17.0948V22.9156H22.7838V17.674C22.7838 16.634 22.7352 15.9742 22.6382 15.6948C22.5456 15.4207 22.3628 15.1861 22.1198 15.0291C21.8428 14.8526 21.5184 14.765 21.1902 14.7779C20.7869 14.7718 20.3906 14.8829 20.0494 15.0979C19.7017 15.3254 19.4412 15.6637 19.3102 16.0579C19.1566 16.4846 19.0792 17.115 19.0782 17.9491V22.9156H16.5054V8.81317H19.0782" fill="white"/>
+</g>
+</g>
+</g>
+</mask>
+<g mask="url(#mask5_1509_114)">
+<g id="Group_3">
+<path id="Vector_10" d="M26.9554 7.21472H14.9058V24.5171H26.9554V7.21472Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

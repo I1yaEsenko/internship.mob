@@ -1,0 +1,52 @@
+@import '../../../styles/mixins';
+
+.design {
+  background: url(./img/designBg.png) center/cover repeat;
+  padding: 41px 0 34px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__title {
+    @include adaptiv-value('max-width', 517, 206, 1 );
+    margin: 0 auto 50px;
+  }
+
+  &__slider{
+    margin-bottom: 50px;
+  }
+
+  &__functional {
+  }
+}
+
+
+.functional {
+
+  &__title {
+    position: relative;
+    margin: 20px 0;
+
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    @include adaptiv-font(25, 14);
+    & img{
+      width: calc(32px + (66 - 32) * ((100vw - 320px) / (1920 - 320)));
+      height: calc(32px + (66 - 32) * ((100vw - 320px) / (1920 - 320)));
+
+      margin-right: calc(10px + (40 - 10) * ((100vw - 320px) / (1920 - 320)));;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "reset.css";
+@import "fonts.css";
+@import 'mixins.scss';
+@import "vars.scss";
+@import "base.css";
+
+html {
+  font-size: 12px;
+  height: 100%;
+
+}
+
+body {
+  font-family: "Gotham Pro", sans-serif;
+  font-weight: 400;
+  height: 100%;
+
+}
+.container {
+  @include adaptiv-value('width',1272,320, 1);
+  margin: 0 auto;
+  padding: 0 26px;
+  @media (min-width: 768px) {
+    @include adaptiv-value('max-width', 1272, 642, 1);
+  }
+}
+.page {
+  overflow: hidden;
+  display: grid;
+  grid-text-areas: 'header' 'content' 'footer';
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+

@@ -1,0 +1,45 @@
+.privacy {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.green-line::before {
+  position: absolute;
+  content: "";
+  border-radius: 6px;
+  background: #83BF0E;
+  width: 50px;
+  height: 4px;
+  top: -15px;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .green-line::before {
+    width: 80px;
+    top: -35px;
+  }
+}
+
+.highlighted {
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+  font-weight: 700;
+  text-align: center;
+  border-radius: 12px;
+  border: 3px dashed #83BF0E;
+  line-height: 150%;
+}
+
+.title {
+  color: var(--color-title, #363B46);
+  font-size: calc(16px + 16 * ((100vw - 320px) / 1600));
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: calc(29px + 11 * ((100vw - 320px) / 1600));
+  }
+}
+
+/*# sourceMappingURL=base.css.map */

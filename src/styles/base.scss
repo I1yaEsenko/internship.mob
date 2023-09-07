@@ -1,0 +1,47 @@
+@import 'mixins.scss';
+
+.privacy {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.green-line {
+  &::before {
+    position: absolute;
+    content: '';
+    border-radius: 6px;
+    background: #83BF0E;
+    width: 50px;
+    height: 4px;
+    top: -15px;
+    left: 0;
+  }
+
+  @media (min-width: 768px) {
+    &::before {
+      width: 80px;
+      top: -35px;
+    }
+  }
+}
+
+.highlighted {
+  @include adaptiv-font(24, 16);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 12px;
+  border: 3px dashed #83BF0E;
+  line-height: 150%;
+}
+
+.title {
+  color: var(--color-title, #363B46);
+  @include adaptiv-font(32, 16);
+  font-weight: 700;
+  line-height: 150%;
+  @media (min-width: 768px) {
+    @include adaptiv-font(40, 29);
+
+  }
+}

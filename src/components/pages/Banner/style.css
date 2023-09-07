@@ -1,0 +1,69 @@
+.banner__image {
+  position: relative;
+}
+.banner__image img {
+  width: 100%;
+}
+.banner__bg {
+  background: url(./img/bg.png) center/cover no-repeat;
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+}
+@media (min-width: 767px) {
+  .banner__bg {
+    bottom: -115px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner__bg {
+    bottom: -215px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner__bg {
+    bottom: -215px;
+  }
+}
+@media (min-width: 1124px) {
+  .banner__bg {
+    bottom: -235px;
+  }
+}
+@media (min-width: 1224px) {
+  .banner__bg {
+    bottom: -255px;
+  }
+}
+@media (min-width: 1324px) {
+  .banner__bg {
+    bottom: -285px;
+  }
+}
+@media (min-width: 1424px) {
+  .banner__bg {
+    bottom: -305px;
+  }
+}
+@media (min-width: 1524px) {
+  .banner__bg {
+    bottom: -325px;
+  }
+}
+@media (min-width: 1624px) {
+  .banner__bg {
+    bottom: -345px;
+  }
+}
+@media (min-width: 1724px) {
+  .banner__bg {
+    bottom: -365px;
+  }
+}
+@media (min-width: 1824px) {
+  .banner__bg {
+    bottom: -400px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

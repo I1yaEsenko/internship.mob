@@ -1,0 +1,42 @@
+.design {
+  background: url(./img/designBg.png) center/cover repeat;
+  padding: 41px 0 34px;
+}
+.design__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.design__title {
+  max-width: 517px;
+  margin: 0 auto 50px;
+}
+@media (max-width: 1272px) {
+  .design__title {
+    max-width: calc(206px + 311 * ((100vw - 320px) / 952));
+  }
+}
+.design__slider {
+  margin-bottom: 50px;
+}
+.functional__title {
+  position: relative;
+  margin: 20px 0;
+}
+.functional__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.functional__list-item {
+  display: flex;
+  align-items: center;
+  font-size: calc(14px + 11 * ((100vw - 320px) / 1600));
+}
+.functional__list-item img {
+  width: calc(32px + 34 * (100vw - 320px) / 1600);
+  height: calc(32px + 34 * (100vw - 320px) / 1600);
+  margin-right: calc(10px + 30 * (100vw - 320px) / 1600);
+}
+
+/*# sourceMappingURL=style.css.map */

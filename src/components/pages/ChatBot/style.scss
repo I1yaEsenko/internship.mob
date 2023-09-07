@@ -1,0 +1,199 @@
+@import "../../../styles/mixins";
+
+//Стили для секции chatbot
+.chatbot  {
+  background-color: #292F3B;
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  padding: 35px 0 57px;
+  @media (min-width: 768px) {
+    padding: 66px 0 80px;
+  }
+  @media (min-width: 1272px) {
+    padding: 66px 0 180px;
+  }
+}
+
+//Стили для блока Info
+.info {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 110px;
+  @media ( min-width: 768px) {
+
+    flex-direction: row;
+    margin-bottom: 175px;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    @media ( min-width: 768px) {
+      row-gap: 25px;
+    }
+  }
+  &__img{
+    @media(min-width: 768px){
+      max-width: 321px;
+      min-height: 425px;
+    }
+    @media(min-width: 1272px){
+      margin-right: 203px;
+
+    }
+  }
+  &__box-title {
+    color: var(--color-textWhite, #fff);
+
+  }
+
+  &__span {
+    color: var(--color-green, #83AD32);
+    @media(min-width: 768px){
+      display: block;
+    }
+  }
+
+  &__text {
+    @include adaptiv-font(25, 14);
+    line-height: 160%;
+    min-height: 84px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+  }
+
+  &__list-item {
+    @include adaptiv-font(25, 14);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & img {
+      margin-right: 15px;
+
+      width: calc(32px + (50 - 32) * ((100vw - 320px) / (768 - 320)));
+      height: calc(32px + (50 - 32) * ((100vw - 320px) / (768 - 320)));
+      @media (min-width: 768px){
+        width: 50px;
+        height: 50px;
+        margin-right: 27px;
+      }
+    }
+  }
+}
+
+//Стили для блока Quiz
+.quiz {
+  display: flex;
+  flex-direction: column;
+  @media ( min-width: 768px) {
+      flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__box{
+    @media(min-width: 1272px){
+      margin-right: 115px;
+    }
+
+  }
+  &__box-title {
+    position: relative;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    & span {
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: url(./img/flyItems.svg);
+      z-index: 10;
+      right: 10px;
+      top: -90px;
+      @media (min-width: 768px){
+        content: url(./img/flyItems_tab.png);
+        right: -45px;
+        top:-130px;
+      }
+      @media (min-width: 850px){
+        right: 0;
+        top:-200px;
+      }
+      @media (min-width: 1272px){
+        content: url(./img/flyItems_pc.png);
+        right: -20px;
+        top:-220px;
+      }
+    }
+
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 33px;
+    @media (min-width: 768px) {
+      row-gap: 25px;
+      margin-bottom: 40px;
+  }
+  }
+
+  &__list-item {
+    @include adaptiv-font(25, 14);
+    list-style-type: disc;
+    line-height: 160%; /* 40px */
+    margin-left: 25px;
+    padding-right: 10px;
+  }
+
+  &__highlighted {
+    @include adaptiv-value('max-width',319, 262, 1);
+    padding: 3px 32px;
+    margin-bottom: 50px;
+    @media(min-width: 768px){
+      margin-bottom: 0;
+      padding: 14px 20px;
+    }
+    @media(min-width: 1272px){
+      padding: 14px 5px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    column-gap: 21px;
+    @media (min-width: 768px) {
+      padding: 100px 0 30px;
+    }
+  }
+
+  &__image {
+    border-radius: 15px;
+    border: 5px solid #FFF;
+    @media (min-width: 375px){
+      border-radius: 19px;
+    }
+    @media (min-width: 440px){
+      border-radius: 22px;
+    }
+    @media (min-width: 870px){
+      border-radius: 27px;
+    }
+    @media (min-width: 1070px){
+      border-radius: 35px;
+    }
+    & img {
+      max-width: 100%;
+      min-height: 254px;
+    }
+
+  }
+}
